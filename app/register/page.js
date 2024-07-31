@@ -21,7 +21,7 @@ const Register = () => {
 
   const handleregister =()=>{
 
-    fetch('https://auth-app-nextjs-ilgbtxael-tahsin566s-projects.vercel.app/api/register',
+    fetch('https://auth-app-nextjs-sigma.vercel.app/api/register',
     {
       method:"POST",
       headers:{
