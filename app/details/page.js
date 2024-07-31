@@ -25,7 +25,7 @@ const Details = () => {
     
     
     useEffect(()=>{
-        fetch('https://auth-app-nextjs-sigma.vercel.app/api/dashboard').then(res=>res.json()).then(data=>{
+        fetch('/api/dashboard').then(res=>res.json()).then(data=>{
             if(!data.found || data.expired){
                 setinfo({name:"",age:"",email:""})
                 router.replace('/')
@@ -40,7 +40,7 @@ const Details = () => {
 
 
     const handleout = ()=>{
-        fetch('https://auth-app-nextjs-sigma.vercel.app/api/logout').then(res=>res.json()).then(data=>{
+        fetch('/api/logout').then(res=>res.json()).then(data=>{
             if(data.logout){
                 localStorage.removeItem("user")
                 let per = localStorage.getItem("user")

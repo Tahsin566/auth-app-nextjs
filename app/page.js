@@ -17,7 +17,7 @@ export default function Home() {
   }
 
   useEffect(()=>{
-    fetch('https://auth-app-nextjs-sigma.vercel.app/api/dashboard').then(res=>res.json()).then(data=>{
+    fetch('/api/dashboard').then(res=>res.json()).then(data=>{
       console.log(data)
       
         if(!data.found || data.expired){  
@@ -32,7 +32,7 @@ export default function Home() {
 
   const handlelogin = ()=>{
 
-    fetch('https://auth-app-nextjs-sigma.vercel.app/api/login',{
+    fetch('/api/login',{
       method:"POST",
       headers:{
 
