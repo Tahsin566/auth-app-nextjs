@@ -7,9 +7,10 @@ import React, { useEffect ,useState} from 'react'
 const Details = () => {
 
 
+    let person
     useEffect(()=>{
-        
-        let person = localStorage.getItem("user")
+
+        person = localStorage.getItem("user")
         person = JSON.parse(person)
         // console.log(person)
 
