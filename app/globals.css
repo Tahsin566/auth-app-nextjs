@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+button{
+  cursor: pointer;
+  background-color: rgb(75, 0, 130);
+}
+
+button:active {
+  background-color: rgba(75, 0, 130,0.8);
+}
