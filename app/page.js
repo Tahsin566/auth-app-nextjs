@@ -17,7 +17,7 @@ export default function Home() {
   }
 
   useEffect(()=>{
-    fetch('/api/dashboard').then(res=>res.json()).then(data=>{
+    fetch('https://auth-app-nextjs-ilgbtxael-tahsin566s-projects.vercel.app/api/dashboard').then(res=>res.json()).then(data=>{
       console.log(data)
       
         if(!data.found || data.expired){  
@@ -32,7 +32,7 @@ export default function Home() {
 
   const handlelogin = ()=>{
 
-    fetch('/api/login',{
+    fetch('https://auth-app-nextjs-ilgbtxael-tahsin566s-projects.vercel.app/api/login',{
       method:"POST",
       headers:{
 
